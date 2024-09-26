@@ -1,0 +1,97 @@
+body {
+  background-color: #f0f0f0; /* Arka plan rengini biraz daha açık bir ton yaptım */
+}
+
+.App {
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 90%;
+  background-color: #c2c2c2; /* Daha açık bir gri tonu */
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 10px; /* Kenar yuvarlama artırıldı */
+}
+
+.search-box {
+  width: 85%; /* Genişlik değiştirildi */
+  height: 60px; /* Yükseklik artırıldı */
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Kenar yuvarlama artırıldı */
+  background-color: #ffffff; /* Arka plan beyaz */
+  color: #333333; /* Yazı rengi koyulaştırıldı */
+  padding-left: 45px; /* Soldan iç boşluk artırıldı */
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Kenar çizgisi eklendi */
+}
+
+.search-box button {
+  width: 80px; /* Buton genişliği artırıldı */
+  height: 60px; /* Buton yüksekliği artırıldı */
+  background-color: #0d6efd; /* Mavi renk değiştirildi */
+  color: #ffffff;
+  border-radius: 10px; /* Kenar yuvarlama artırıldı */
+  border: none; /* Kenar çizgisi kaldırıldı */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ad {
+  border: 1px solid #ddd; /* Daha açık bir kenar rengi */
+  padding: 20px; /* İç boşluk artırıldı */
+  margin: 20px 0;
+}
+
+.ad img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ad-title {
+  font-size: 1.6em; /* Yazı boyutu biraz büyütüldü */
+  margin-bottom: 10px; /* Alt boşluk artırıldı */
+}
+
+.ad-description {
+  margin-bottom: 10px; /* Alt boşluk artırıldı */
+}
+
+.ad-location,
+.ad-category {
+  font-style: italic;
+  color: #666; /* Renk koyulaştırıldı */
+}
+
+.job-detail-img {
+  margin-left: auto; /* Merkeze yerleştirilmesi için auto kullanıldı */
+  margin-right: auto; /* Merkeze yerleştirilmesi için auto kullanıldı */
+  width: 18%; /* Genişlik artırıldı */
+}
+
+.category-location {
+  margin-left: auto; /* Merkeze yerleştirilmesi için auto kullanıldı */
+}
+
+.job-heading {
+  margin-left: auto; /* Merkeze yerleştirilmesi için auto kullanıldı */
+}
+
+.back-link {
+  margin-left: auto; /* Merkeze yerleştirilmesi için auto kullanıldı */
+  border: 3px solid #ddd; /* Kenar rengi değiştirildi */
+  position: relative;
+  top: 25px; /* Yükseklik değiştirildi */
+  text-decoration: none;
+  color: #222; /* Renk koyulaştırıldı */
+  border-radius: 40%; /* Kenar yuvarlama artırıldı */
+  background-color: #ffffff; /* Arka plan beyaz */
+}

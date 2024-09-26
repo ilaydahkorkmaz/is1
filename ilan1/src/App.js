@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import IlanList from './components/IlanList';
-import JobDetail from './components/JobDetail';
+import JobList from './components/JobList'; 
+import JobDetails from './components/JobDetails'; 
 import './App.css';
 
 function App() {
@@ -9,14 +9,12 @@ function App() {
   const [selectedLocation, setSelectedLocation] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
 
-
-
   return (
     <Router>
       <div className="App">
         <h1>İş İlan Portalı</h1>
         <div className="header">
-          <div className="arama_kutusu">
+          <div className="search-box"> {}
             <input
               type="text"
               placeholder="İş İlanı Arayın"
@@ -54,12 +52,12 @@ function App() {
               <option value="Proje Yönetimi">Proje Yönetimi</option>
               <option value="DevOps">DevOps</option>
             </select>
-            <button id="arama_butonu">Ara</button>
+            <button id="search-button">Ara</button> {}
           </div>
         </div>
         <Routes>
-          <Route path="/" element={<IlanList searchTerm={searchTerm} location={selectedLocation} category={selectedCategory} />} />
-          <Route path="/job/:jobId" element={<JobDetail />} />
+          <Route path="/" element={<JobList searchTerm={searchTerm} location={selectedLocation} category={selectedCategory} />} />
+          <Route path="/job/:jobId" element={<JobDetails />} /> {}
         </Routes>
       </div>
     </Router>
